@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Покупка билетов</title>
+    <link rel="stylesheet" href="styleAuthotized.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navig">
+      <div class="navig-centered">
+        <a href="index.html" class="active">Главная</a>
+      </div>
+      <a href="authorized.html">Авторизация</a>
+      <a href="tickets.html">Поиск билетов</a>
+      <input
+        style="width: 120px; height: 20px; margin-top: 12px; margin-left: 27px"
+        type="text"
+        value="Поиск по сайту"
+      />
+    </div>
+    <form class="format-tickets" action="">
+      <div>
+        <select class="format-input" style="height: 30px">
+          <center><option value="">Город отправки</option></center>
+          <option value="1">Синий</option>
+          <option value="2">Зеленый</option>
+          <option value="3">Желтый</option>
+          <option value="4">Красный</option>
+          <option value="5">Оранжевый</option>
+          <option value="6">Черный</option>
+        </select>
+      </div>
+      <div>
+        <select
+          name="user_profile_color_2"
+          required="required"
+          class="format-input"
+          style="height: 30px; margin-top: 15px"
+        >
+          <center><option value="">Город прибытия</option></center>
+          <option value="1">Синий</option>
+          <option value="2">Зеленый</option>
+          <option value="3">Желтый</option>
+          <option value="4">Красный</option>
+          <option value="5">Оранжевый</option>
+          <option value="6">Черный</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="">Даты вылетов</label>
+        <input class="format-input" type="date" />
+      </div>
+      <div>
+        <label for="">Количество билетов</label>
+        <input class="format-input" type="text" />
+      </div>
+      <div>
+        <button style="margin-top: 7px">Найти билеты</button>
+      </div>
+      <p>Свободные места <output name="result">0</output></p>
+    </form>
+    <img src="NumberSeat.jpg" alt="Seats" style="float: right" />
+    <form style="margin-top: 550px">
+      <header>
+        <h1>Сайт продажи авиабилетов</h1>
+      </header>
+      <article>
+        <h2>Добро пожаловать!</h2>
+      </article>
+      <footer>Copyright Подшивалов Илья</footer>
+    </form>
+  </body>
+</html>
